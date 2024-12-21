@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="KH-FITNES" content="width=device-width, initial-scale=1.0">
+    <title>KH-FITNES</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">KH-FITNES</div>
+        <nav>
+            <ul>
+                <li><a href="#home" target="_blank">Главная</a></li>
+                <li><a href="#products" target="_blank">Наши услуги</a></li>
+                <li><a href="#about" target="_blank">О нас</a></li>
+                <li><a href="#contact" target="_blank">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="banner">
+        <button onclick="scrollToSection('products')">Browse Products</button>
+        <div class="banner">
+            <img src="C:\Users\Legion\Desktop\fit\Photo\gantel.jpg" width="100%">
+            <div class="banner-text">
+                <h1> Фитнес-клуб KH-FIT PREMIUM KHUJAND</h1>
+            </div>
+        </div>
+    </section>
+
+    <section id="search">
+        <form>
+            <input type="text" placeholder="Поиск занятий..." />
+            <button type="submit">Искать</button>
+        </form>
+    </section>
+
+    <section id="products">
+    </section>
+
+    <section id="about">
+    </section>
+
+    <section id="contact">
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход в фитнес-клуб</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Вход в фитнес-клуб</h2>
+        <form action="/login" method="POST">
+            <div class="form-group">
+                <label for="username">Имя пользователя</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Пароль</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Войти</button>
+            <p class="register-link">Нет аккаунта? <a href="/register">Зарегистрироваться</a></p>
+        </form>
+    </div>
+</body>
+</html>
+
+
+    <section id="products">
+        <h2>Наши услуги личных трененров</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="https://www.achernishev.ru/images/fotootchety/fitnes-modeli/fitnes-portret-07.jpg" alt="Shtani2.jpg">
+                <h3>Хомидов Абдукахор</h3>
+                <p>Услуга тренера:150 Сомон</p>
+                <button onclick="addToCart('Cargo')">Связаться</button>
+            </div>
+            <div class="product">
+                <img src="https://img.freepik.com/free-photo/young-adult-doing-indoor-sport-gym_23-2149205542.jpg" alt="Palto4000">
+                <h3>Фозилов Алишер</h3>
+                <p>Услуга тренера:50 Сомон</p>
+                <button onclick="addToCart('Palto')">Связаться</button>
+            </div>
+            <div class="product">
+                <img src="https://www.achernishev.ru/images/sport/SpiritFitnes/SpiritFitnes-004.jpg">
+                <h3>Носкин Иван</h3>
+                <p>Услуга тренера: 200 Сомон</p>
+                <button onclick="addToCart('Shirts')">Связаться</button>
+            </div>
+            <div class="product">
+                <img src="https://www.achernishev.ru/images/fotootchety/fitnes-modeli/fitnes-portret-06.jpg">
+                <h3>Усмонова Мехрангез</h3>
+                <p>Услуга тренера: 250 Сомон</p>
+                <button onclick="addToCart('Shirts')">Связаться</button>
+            </div>
+            <div class="product">
+                <img src="https://www.achernishev.ru/images/fotootchety/fitnes-modeli/fitnes-portret-01.jpg">
+                <h3>Охунова Валя</h3>
+                <p>Услуга тренера: 300 Сомон</p>
+                <button onclick="addToCart('Shirts')">Связаться</button>
+            </div>
+            <div class="product">
+                <img src="https://www.achernishev.ru/images/fotootchety/parizhlajf/trener-parislife-fitness.jpg">
+                <h3>Негматов Акмал </h3>
+                <p>Услуга тренера: 400 Сомон</p>
+                <button onclick="addToCart('Shirts')">Связаться</button>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyLgKTcSe5zGkA6JYBSWoNu3lnExZT0Ttumg&s">
+                <h3>Джиган К</h3>
+                <p>Услуга тренера: 600 Сомон</p>
+                <button onclick="addToCart('Shirts')">Связаться</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>О нас
+        </h2>
+        <p>Мы — предлагаем лучшие занятия ..</p>
+    </section>
+
+    <section id="contact">
+        <h2>Контакты</h2>
+        <p>Связаться с нами : muhammadkhon@gmail.com | +992 94 123 30 30</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 время привести себя в форму. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
